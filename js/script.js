@@ -1,3 +1,5 @@
+// function for calculate Donation
+
 function donateBangladesh(donationId, amountId, historyText) {
   const donationAmount = parseInt(document.getElementById(donationId).value);
 
@@ -33,6 +35,8 @@ function donateBangladesh(donationId, amountId, historyText) {
   document.getElementById("donation_confirmation").showModal();
 }
 
+// addEventListener on Donate button and call the donation function
+
 document.getElementById("noakhali_btn").addEventListener("click", function () {
   donateBangladesh(
     "noakhali_donation",
@@ -55,4 +59,38 @@ document.getElementById("quota_btn").addEventListener("click", function () {
     "quota_amount",
     "Aid for Injured in the Quota Movement, Bangladesh"
   );
+});
+
+// function for donation history button
+
+function donationHistoryToggle(showId, hideId) {
+  document.getElementById(showId).classList.remove("hidden");
+  document.getElementById(hideId).classList.add("hidden");
+}
+function activeBtnStyle(activeBtnId, inactiveBtnId) {
+  document
+    .getElementById(activeBtnId)
+    .classList.add("bg-Limeglow", "text-midnight_black");
+  document
+    .getElementById(inactiveBtnId)
+    .classList.remove("bg-Limeglow", "text-midnight_black");
+}
+document.getElementById("donation_btn").addEventListener("click", function () {
+  donationHistoryToggle("donation", "history");
+  activeBtnStyle("donation_btn", "history_btn");
+});
+
+document.getElementById("history_btn").addEventListener("click", function () {
+  donationHistoryToggle("history", "donation");
+  activeBtnStyle("history_btn", "donation_btn");
+});
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    navbar.classList.remove("bg-IvoryCloud");
+  } else {
+    navbar.classList.add("bg-IvoryCloud");
+  }
 });

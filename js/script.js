@@ -88,9 +88,11 @@ document.getElementById("history_btn").addEventListener("click", function () {
 const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 30) {
     navbar.classList.remove("bg-IvoryCloud");
   } else {
     navbar.classList.add("bg-IvoryCloud");
   }
 });
+
+

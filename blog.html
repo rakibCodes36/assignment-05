@@ -33,10 +33,10 @@
     </script>
   </head>
   <body class="font-Lexend">
-    <header class="sticky top-0 backdrop-blur-2xl">
-      <div class="bg-IvoryCloud">
+    <header class="sticky top-0 backdrop-blur-2xl z-10">
+      <div class="bg-IvoryCloud" id="navbar">
         <div
-          class="max-w-[1140px] mx-auto flex flex-col lg:flex-row items-center lg:justify-between py-6 gap-4"
+          class="max-w-[1140px] mx-auto flex flex-row items-center justify-around py-6 lg:justify-between"
         >
           <a href="/index.html">
             <button
@@ -46,8 +46,10 @@
             </button></a
           >
           <div class="flex items-center gap-4">
-            <img src="./assets/logo.png" alt="" />
-            <h4 class="text-xl font-semibold text-midnight_black">
+            <img class="w-8 lg:w-12" src="./assets/logo.png" alt="Logo" />
+            <h4
+              class="text-xl font-semibold text-midnight_black hidden lg:block"
+            >
               Donate Bangladesh
             </h4>
           </div>
@@ -61,7 +63,7 @@
       </div>
     </header>
 
-    <main class="px-4">
+    <main class="px-4 min-h-[80vh] pb-12">
       <section class="lg:max-w-[1140px] mx-auto">
         <div class="join join-vertical w-full">
           <div class="flex gap-3 py-10">
@@ -208,5 +210,8 @@
         </div>
       </section>
     </main>
+    <footer class="bg-IvoryCloud min-h-16 flex justify-center items-center">
+      <h3>All right reserved &copy;Donate Bangladesh</h3>
+    </footer>
   </body>
 </html>

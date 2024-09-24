@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              midnight_black: "rgb(17,17,17)",
+              midnight_black_op7: "rgba(17,17,17,0.7)",
+              midnight_black_op1: "rgba(17,17,17,0.1)",
+              Limeglow: "rgb(180, 244, 97)",
+              IvoryCloud: "rgb(249, 247, 243)",
+            },
+            fontFamily: {
+              Lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Lexend">
+    <header class="sticky top-0 backdrop-blur-2xl">
+      <div class="bg-IvoryCloud">
+        <div
+          class="max-w-[1140px] mx-auto flex flex-col lg:flex-row items-center lg:justify-between py-6 gap-4"
+        >
+          <a href="/index.html">
+            <button
+              class="btn bg-Limeglow text-xl font-semibold text-midnight_black"
+            >
+              Home
+            </button></a
+          >
+          <div class="flex items-center gap-4">
+            <img src="./assets/logo.png" alt="" />
+            <h4 class="text-xl font-semibold text-midnight_black">
+              Donate Bangladesh
+            </h4>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./assets/coin.png" alt="" />
+            <h4 class="text-xl font-medium text-midnight_black_op7">
+              <span id="balance"> 5500</span> BDT
+            </h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="px-4">
+      <section class="lg:max-w-[1140px] mx-auto">
+        <div class="join join-vertical w-full">
+          <div class="flex gap-3 py-10">
+            <h1 class="text-4xl font-bold">Important FAQ</h1>
+            <img src="./assets/ask-question.gif" alt="" width="42" />
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for
+                web documents. It represents the page so that programs can
+                change the document structure, style, and content. The DOM
+                represents the document as nodes and objects; that way,
+                programming languages can interact with the page.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="mb-2">
+                There are several methods to select elements from the DOM:
+              </p>
+              <ul class="list-disc pl-8 leading-6">
+                <li>
+                  <strong> getElementById():</strong> This method selects an
+                  element by its unique ID attribute.
+                </li>
+                <li>
+                  <strong>getElementsByTagName():</strong> This method selects
+                  elements by their tag name.
+                </li>
+                <li>
+                  <strong>getElementsByClassName(): </strong>This method selects
+                  elements by their class name.
+                </li>
+                <li>
+                  <strong>querySelector():</strong> This method selects the
+                  first element that matches a specified CSS selector.
+                </li>
+                <li>
+                  <strong>querySelectorAll():</strong> This method selects all
+                  elements that match a specified CSS selector.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique in JavaScript where a single
+                event listener is attached to a parent element instead of
+                attaching event listeners to multiple child elements. When an
+                event occurs on a child element, the event bubbles up the DOM
+                tree, and the parent element's event listener handles the event
+                based on the target element.
+              </p>
+              <p class="my-2">
+                Event delegation provides the following benefits:
+              </p>
+              <ul class="list-disc pl-8 leading-6">
+                <li>
+                  <strong> Improved performance: </strong> Attaching a single
+                  event listener is more efficient than attaching multiple event
+                  listeners to individual elements, especially for large or
+                  dynamic lists. This reduces memory usage and improves overall
+                  performance.
+                </li>
+                <li>
+                  <strong>Simplified event handling:</strong> With event
+                  delegation, you only need to write the event handling logic
+                  once in the parent element's event listener. This makes the
+                  code more maintainable and easier to update.
+                </li>
+                <li>
+                  <strong>Dynamic element support: </strong> Event delegation
+                  automatically handles events for dynamically added or removed
+                  elements within the parent element. There's no need to
+                  manually attach or remove event listeners when the DOM
+                  structure changes
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="my-2">
+                <b>Attributes:</b>
+              </p>
+              <ul class="list-disc pl-8 leading-6">
+                <li>
+                  To get an attribute value:
+                  <strong>element.getAttribute("attributeName")</strong>
+                </li>
+                <li>
+                  To set an attribute value:
+                  <strong
+                    >element.setAttribute("attributeName", "value")</strong
+                  >
+                </li>
+                <li>
+                  To remove an attribute:
+                  <strong>element.removeAttribute("attributeName")</strong>
+                </li>
+              </ul>
+              <p class="my-2">
+                <b>Styles:</b>
+              </p>
+              <ul class="list-disc pl-8 leading-6">
+                <li>
+                  To get an inline style property:
+                  <strong>element.style.propertyName</strong>
+                </li>
+                <li>
+                  To set an inline style property:
+                  <strong>element.style.propertyName = "value"</strong>
+                </li>
+                <li>
+                  To get a computed style property (including inherited styles):
+                  <strong
+                    >window.getComputedStyle(element).getPropertyValue("propertyName")</strong
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

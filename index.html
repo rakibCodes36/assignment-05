@@ -32,7 +32,50 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-Lexend">
+    <header class="sticky top-0 backdrop-blur-2xl">
+      <div class="bg-IvoryCloud" id="navbar">
+        <div
+          class="max-w-[1140px] mx-auto flex flex-row items-center justify-around py-6 lg:justify-between"
+        >
+          <a href="/blog.html">
+            <button
+              class="btn bg-Limeglow text-xl font-semibold text-midnight_black"
+            >
+              Blog
+            </button></a
+          >
+          <div class="flex items-center gap-4">
+            <img class="w-8 lg:w-12" src="./assets/logo.png" alt="Logo" />
+            <h4
+              class="text-xl font-semibold text-midnight_black hidden lg:block"
+            >
+              Donate Bangladesh
+            </h4>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./assets/coin.png" alt="" />
+            <h4 class="text-xl font-medium text-midnight_black_op7">
+              <span id="balance"> 5500</span> BDT
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div id="btns" class="max-w-[1140px] mx-auto text-center pt-20 pb-8">
+        <button
+          id="donation_btn"
+          class="btn bg-Limeglow text-xl font-semibold text-midnight_black mr-4"
+        >
+          Donation
+        </button>
+        <button
+          id="history_btn"
+          class="btn text-xl font-medium hover:text-midnight_black"
+        >
+          History
+        </button>
+      </div>
+    </header>
     <script src="./js/script.js"></script>
   </body>
 </html>

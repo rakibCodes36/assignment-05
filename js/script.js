@@ -1,13 +1,14 @@
 // function for calculate Donation
 
 function donateBangladesh(donationId, amountId, historyText) {
-  const donationAmount = parseInt(document.getElementById(donationId).value);
+  const donationInput = document.getElementById(donationId).value;
+  const donationAmount = parseInt(donationInput);
 
   let balance = parseInt(document.getElementById("balance").innerText);
   let donationTotalAmount = parseInt(
     document.getElementById(amountId).innerText
   );
-  if (isNaN(donationAmount) || donationAmount <= 0) {
+  if (isNaN(donationInput) || donationAmount <= 0) {
     return alert("Please Enter a Valid Amount");
   }
   if (donationAmount > balance) {
@@ -94,5 +95,3 @@ window.addEventListener("scroll", function () {
     navbar.classList.add("bg-IvoryCloud");
   }
 });
-
-

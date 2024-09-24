@@ -174,17 +174,30 @@
               <ul class="list-disc pl-8 leading-6">
                 <li>
                   To get an attribute value:
-                  <strong>element.getAttribute("attributeName")</strong>
+                  <strong class="hidden lg:block"
+                    >element.getAttribute("attributeName")</strong
+                  >
+                  <strong class="lg:hidden"
+                    >element .getAttribute ("attributeName")</strong
+                  >
                 </li>
                 <li>
                   To set an attribute value:
-                  <strong
+                  <strong class="hidden lg:block"
                     >element.setAttribute("attributeName", "value")</strong
+                  >
+                  <strong class="lg:hidden"
+                    >element .setAttribute ("attributeName", "value")</strong
                   >
                 </li>
                 <li>
                   To remove an attribute:
-                  <strong>element.removeAttribute("attributeName")</strong>
+                  <strong class="hidden lg:block"
+                    >element.removeAttribute("attributeName")</strong
+                  >
+                  <strong class="lg:hidden"
+                    >element .removeAttribute("attributeName")</strong
+                  >
                 </li>
               </ul>
               <p class="my-2">
@@ -193,11 +206,30 @@
               <ul class="list-disc pl-8 leading-6">
                 <li>
                   To get an inline style property:
-                  <strong>element.style.propertyName</strong>
+                  <strong class="hidden lg:block"
+                    >element.style.propertyName</strong
+                  >
+                  <strong class="lg:hidden">element .style.propertyName</strong>
                 </li>
                 <li>
                   To set an inline style property:
-                  <strong>element.style.propertyName = "value"</strong>
+                  <strong class="hidden lg:block"
+                    >element.style.propertyName = "value"</strong
+                  >
+                  <strong class="lg:hidden"
+                    >element.style .propertyName = "value"</strong
+                  >
+                </li>
+                <li>
+                  To get a computed style property (including inherited styles):
+                  <strong class="hidden lg:block"
+                    >window .getComputedStyle(element)
+                    .getPropertyValue("propertyName")</strong
+                  >
+                  <strong class="lg:hidden"
+                    >window .getComputedStyle(element)
+                    .getPropertyValue("propertyName")</strong
+                  >
                 </li>
               </ul>
             </div>

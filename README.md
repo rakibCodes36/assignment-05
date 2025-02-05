@@ -9,7 +9,7 @@
 
 ## Screenshot
 
-![Project Screenshot](<img src="https://i.ibb.co.com/LXh2g1fV/assignment-5.png" alt="assignment-5" border="0">) *(Replace with actual screenshot)*
+![Project Screenshot](./assest/assignment-5.png) 
 
 ## Features
 

@@ -43,6 +43,6 @@
 
 ## Live Project & Resources
 
-- **Live Project:** [Insert live link here]
-- **GitHub Repository:** [Insert repository link here]
+- **Live Project:** [https://rakibcodes36.github.io/assignment-05/]
+- **GitHub Repository:** [https://github.com/rakibCodes36/assignment-05]
 

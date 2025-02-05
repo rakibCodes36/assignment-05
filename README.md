@@ -4,7 +4,7 @@
 
 **Donate Bangladesh** is a web-based donation platform designed to support relief efforts in Bangladesh. Users can contribute to different causes, including flood relief and medical aid for injured individuals.
 
-- **Live Project:** [https://rakibcodes36.github.io/assignment-05/]
+- **Live Project:** https://rakibcodes36.github.io/assignment-05/
 - **Technologies Used:** HTML, CSS (Tailwind CSS, DaisyUI), JavaScript
 
 ## Screenshot
@@ -43,6 +43,6 @@
 
 ## Live Project & Resources
 
-- **Live Project:** [https://rakibcodes36.github.io/assignment-05/]
-- **GitHub Repository:** [https://github.com/rakibCodes36/assignment-05]
+- **Live Project:**  https://rakibcodes36.github.io/assignment-05/
+- **GitHub Repository:**  https://github.com/rakibCodes36/assignment-05
 

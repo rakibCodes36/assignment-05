@@ -9,7 +9,7 @@
 
 ## Screenshot
 
-![Project Screenshot](./assest/assignment-5.png) 
+![Project Screenshot](./assets/assignment-5.png) 
 
 ## Features
 
